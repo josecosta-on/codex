@@ -1,0 +1,56 @@
+<div class="widget-box" ng-controller="tasksController">
+	<div class="widget-header header-color-blue">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4 class="bigger lighter bb">					
+					TODO
+				</h4>
+			</div>			
+		</div>
+	</div>
+	<div class="widget-body ">
+		
+		<div class="task">
+			<div class="pure-checkbox" ng-repeat="task in tasks.todo |  orderBy : '-id'" data-toggle="tooltip" data-placement="bottom" title="Created at: {{task.created_at | date:'MM/dd/yyyy HH:mm:ss' }}">
+                <input 
+				type="checkbox"
+				value="{{task.status}}"
+				ng-checked="task.status==2"
+				/> 
+                <label class="no-bold" for="checkbox" ng-click="toggleStatus(task)"><span ng-class="{strike:task.status==2}">{{task.description}}</span></label><a ng-click="deleteTaskModal(task)" class="pull-right text-danger"><i class="glyphicon glyphicon-trash"></i></a>
+               
+            </div>
+
+		
+		</div>
+	</div>
+</div>
+
+<div class="widget-box" ng-controller="tasksController">
+	<div class="widget-header header-color-blue">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4 class="bigger lighter bb">					
+					DONE
+				</h4>
+			</div>			
+		</div>
+	</div>
+	<div class="widget-body ">
+		
+		<div class="task">
+			<div class="pure-checkbox" ng-repeat="task in tasks.done |  orderBy : '-id'" data-toggle="tooltip" data-placement="bottom" title="Created at: {{task.created_at | date:'MM/dd/yyyy HH:mm:ss' }}
+Finished at: {{task.end_at | date:'MM/dd/yyyy HH:mm:ss' }}
+				">
+                <input 
+				type="checkbox"
+				value="{{task.status}}"
+				disabled="disabled" 
+				ng-checked="task.status==2"/> 
+                <label class="no-bold" for="checkbox"><del><span ng-class="{strike:task.status==2}">{{task.description}}</span><del></label>
+            </div>
+
+		
+		</div>
+	</div>
+</div>

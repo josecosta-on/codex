@@ -1,0 +1,68 @@
+<ng-controller  ng-controller="profileController">
+
+	<ng-include src="'partials/topbar/default.html'"></ng-include>     
+	<div class="container">
+		<div class="page-content">
+			<div class="page-header">
+				<h1>
+					Profile 
+				</h1>
+			</div>
+			<div class="page-content">
+				<div class="row" >
+					<div class="col-xs-12 col-md-6" ">
+						<form name="userForm" class="form-horizontal" role="form">
+						<div class="panel panel-default " >
+							
+							<div class="panel-heading ">
+							Edit your data
+							</div>
+
+
+
+							<div class="panel-body" >
+								<div class="widget-body">
+									<div class="widget-main">
+
+
+											<div class="form-group">
+												<label class="col-sm-3 control-label no-padding-right" for="name">Name</label>
+												<div class="col-sm-7">
+													<span class="block input-icon input-icon-right">
+														<input type="text" class="form-control" placeholder="Name" ng-model="user.name" />
+													</span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-sm-3 control-label no-padding-right" for="phone">Phone</label>
+												<div class="col-sm-7">
+													<span class="block input-icon input-icon-right">
+														<input type="text"  class="form-control" placeholder="Phone" name="phone" ng-model="user.phone"/>
+													</span>
+												</div>
+											</div>
+
+											
+										
+
+
+								</div>
+							</div>       
+
+						</div>
+						<div class="panel-footer ">
+						<button type="submit" class="btn btn-primary pull-right" ng-click="updateuser(user)">Change</button>
+						<div class="clearfix"></div>
+						</div>
+						
+					</div>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- /.page-content -->
+	</div>
+</div>
+</ng-controller>

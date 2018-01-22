@@ -1,0 +1,164 @@
+
+.add-project{ /* fix create new project position*/
+	margin-top: 8px;
+	/*float: right;*/
+}
+
+
+.tooltip-inner { /* fix tooltip wrap*/
+  white-space:pre;
+  max-width: none;
+}
+
+.bb{  /* create unique border bottom*/
+	padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+/**************************
+  raised buttons
+**************************/
+
+.btn.raised {
+ 
+  border: 0px solid transparent;
+  border-radius: 3px;
+  /*padding: 10px 16px;*/
+  margin-bottom: -3px;
+  padding: 4px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+.btn.raised:hover,
+.btn.raised:active{
+  border: 0px solid transparent;
+}
+
+.btn-lg.raised {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 5px;
+}
+
+.btn-primary.raised {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary.raised:hover,
+.btn-primary.raised:focus,
+.btn-primary.raised:active,
+.btn-primary.raised.active,
+.open .dropdown-toggle.btn-primary.raised {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+
+.btn.raised.active,.btn.raised:active{
+  margin-top: -3px;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+   
+}
+.btn-danger.raised:active, .btn-danger.raised.active {
+    background: #d04e4a;
+    
+}
+.btn.raised:focus, .btn.raised:active:focus, .btn.raised.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary.raised {
+    background: #0099cc;
+    color: #ffffff;
+}
+.btn-primary.raised:hover, .btn-primary.raised:focus, .btn-primary.raised:active, .btn-primary.raised.active, .open > .dropdown-toggle.btn-primary.raised {
+    background: #33a6cc;
+}
+
+/***********************
+  SHADOWS
+************************/
+
+.panel.panel-shadow{
+   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.25); 
+}
+
+.btn-primary.raised {
+    box-shadow: -1px 3px 8px 0px rgba(0,0,0,0.25);
+}
+.btn-danger.raised {
+    box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.25);
+    margin-left: 0px!important; // retirar daqui
+}
+
+.docolor{
+	color: #428bca!important;
+}
+/***********************
+  inline style
+************************/
+
+.inlineput{ /*add inline style*/
+	background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  border-radius: 0;
+  outline: 0;
+
+  width: 100%;
+ 
+  box-shadow: none;
+  margin-top: -2px;
+}
+
+.form-control.inlineput:focus {
+	box-shadow: none;
+}
+
+label.no-bold {font-weight: 400 !important}
+
+@media only screen and (max-width: 767px) {
+    .add-project {
+      display: block;
+      float: left;
+      width: 100%;
+    }
+    .add-project > .form-group button{
+      display: block;
+      float: right;
+      /* width: 100%; */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .add-project > .form-group label{
+      display: none;
+      opacity: 0;
+     
+    }
+    /***********************
+      navbar-right style fix
+    ************************/
+    .nav.navbar-nav.navbar-right{
+      position: absolute;
+      top: 0px;
+      right: 12px;
+    }
+    .nav.navbar-nav.navbar-right .dropdown-toggle{
+      text-align: right;
+    }
+    .nav.navbar-nav.navbar-right .dropdown.open{
+      width: 100%;
+      position: fixed;
+      top: 9px;
+      left: 0px;
+      background: #fff;
+    }
+    
+        
+}

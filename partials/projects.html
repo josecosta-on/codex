@@ -1,0 +1,50 @@
+
+
+    
+        <div class="panel panel-default panel-shadow" ng-controller="projectController">
+            <div class="panel-heading {{headers.view}}">
+                {{project.description}}
+                
+                <div  class="btn-group pull-right pb-10" role="group">
+                    <button class="btn btn-md btn-primary raised" type="button" ng-click="toogleheaders()">
+                        <span aria-hidden="true" class="glyphicon glyphicon-pencil">
+                        </span>
+                    </button>
+                    <button class="btn btn-md btn- btn-danger raised" type="button" ng-click="deleteproject(project)">
+                        <span aria-hidden="true" class="glyphicon glyphicon-trash">
+                        </span>
+                    </button>
+                    
+
+                </div>
+            </div>
+            <div class="panel-heading {{headers.edit}}">
+                <form >
+                <div class="input-group input-group-xs">
+                    
+                  <input type="text" class="form-control" ng-model="project.description" autofocus>
+                  <div class="input-group-btn">
+                  <button class=" btn  btn-primary" type="submit" ng-click="updateproject(project)">
+                          <span aria-hidden="true" class="glyphicon glyphicon-floppy-disk"></span>
+                      </button>
+                  </div>
+                  
+              </div>
+              </form>
+
+
+          </div>
+
+          
+
+        <div class="panel-body" >
+            <div ng-include="'partials/task.html'"></div>                
+
+        </div>
+        <div class="panel-footer">
+            <ng-include src="'partials/addtask.html'"></ng-include>     
+        </div>
+    </div>
+
+
+
