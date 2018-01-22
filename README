@@ -1,0 +1,27 @@
+
+------------------------------------------------------------
+- First change mysql database settings
+------------------------------------------------------------
+
+Create a mysql database and import codex_demo.sql or codex.sql
+
+Change api/config.php to your database configuration
+
+------------------------------------------------------------
+- If you use codex.sql file
+------------------------------------------------------------
+
+    -> Open the project and go to signup
+    -> Add new user
+
+------------------------------------------------------------
+- If you use codex_demo.sql file
+------------------------------------------------------------
+	
+	-> Login credentials are:
+		email: josecosta@outlook.com
+		password: 12345
+
+------------------------------------------------------------
+- Login and explore. Thank you!
+------------------------------------------------------------
