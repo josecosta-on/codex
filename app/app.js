@@ -255,11 +255,11 @@ app.controller('profileController', function($scope, $http, Data,$location) {
   $scope.getuser();
 
   $scope.updateuser= function (user) {
-    console.log(['user',user]);
+    
     Data.post("updateuser",{
             user: user
         }).then(function(result){
-          console.log(result);
+          
       Data.toast(result); 
       $scope.getuser();       
     });
