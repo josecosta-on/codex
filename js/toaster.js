@@ -36,7 +36,7 @@ angular.module('toaster', ['ngAnimate'])
     'newest-on-top': true,
     //'fade-in': 1000,            // done in css
     //'on-fade-in': undefined,    // not implemented
-    //'fade-out': 1000,           // done in css
+    'fade-out': 500,           // done in css
     // 'on-fade-out': undefined,  // not implemented
     //'extended-time-out': 1000,    // not implemented
     'time-out': 5000, // Set timeOut and extendedTimeout to 0 to make it sticky
